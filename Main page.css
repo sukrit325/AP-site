@@ -1,9 +1,22 @@
-body {
-    background-color: burlywood;
-    font-size: 40px;
+div {
+    font-size: 140px;
+    text-align: center;
+    margin-bottom: 6cm;
+    margin-top: 2cm;
+    color: #030b11;
+    text-shadow: 3px 20px 10px #6c757d;
+}
+ body{
+    background-color: #184e77;
 }
 button {
-    height: 10cm;
-    width: 60cm;
-    font-size: 60px;
+
+    display: block;
+    height: 15cm;
+    width: 130cm;
+    font-size: 100px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #76c893, #52b69a, #34a0a4);
+    color: #0a2133;
+    margin: auto;
 }
