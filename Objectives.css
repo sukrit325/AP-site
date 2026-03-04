@@ -1,3 +1,8 @@
+.head {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
 .heading {
     text-align: center;
     font-size: 40px;
@@ -5,5 +10,6 @@
 body {
     font-style: italic;
     font-size: 30px;
+    margin-left: 7cm;
     background: green;
 }
