@@ -39,7 +39,7 @@ input {
     padding-right: 5px;
     width: 1150px;
     border: 5px solid black;
-    border-radius: 10px;
+    border-radius: 40px;
 }
 .container {
     display: flex;
@@ -54,7 +54,7 @@ input {
 }
 button {
     background-color: aqua;
-    margin-left: 40px;
+    margin-left: 60px;
     width: 150px;
     height: 60px;
     font-size: 30px;
