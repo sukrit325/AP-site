@@ -1,62 +1,72 @@
-.head {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
 div {
-    font-size: 40px;
+    font-size: 110px;
     font-style: oblique;
-    top: 20px;
 }
 .Chronicles {
-    margin-left: 50px;
-    font-size: 30px;
+    font-size: 110px;
 }
+body {
+    background: #0B1020;
+    color: #EAF2FF;
+    position: relative;
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    margin-left: 10cm;
+    margin-right: 10cm;
+    margin-top: 2cm;
+}
+
 input {
     display: block;
-    width: 300px;
-    height: 60px;
-    font-size: 20px;
+    width: 500px;
+    height: 90px;
+    font-size: 50px;
     position: absolute;
-    top: 50px;
     right: 20px;
-    left: 80px;
-    padding-left: 10px;
-    margin-left: auto;
-    margin-top: 50px;
     margin-right: 160px;
-    border-radius: 30px;
+    border-radius: 40px;
+    color: black;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 .card {
-    margin-left: 30px;
-    font-size: 30px;
+    margin-left: 10px;
+    margin-right: auto;
+    font-size: 50px;
     text-align: center;
     background: rgb(77, 128, 145);
-    margin-top: 50px;
-    margin-bottom: 30px;
     padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
     width: 1150px;
-    border: 5px solid black;
+    border: 14px solid black;
     border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    font-style: oblique;
 }
-.container {
+.content-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    margin-top: -180px;
 }
-.container img {
-    margin-left: auto;
-    margin-right: 90px;
+.button-container {
+    display: flex;
+    justify-content: left;
+    margin-top: -120px;
+}
+img {
+    width: 25cm;
     border-radius: 25px;
+    height: auto;
 }
 button {
-    background-color: aqua;
-    margin-left: 60px;
-    width: 150px;
-    height: 60px;
-    font-size: 30px;
-    border-radius: 10px;
+    background-color: #33D1FF;
+    color: #0A1A2B;
+    width: 400px;
+    height: 200px;
+    font-size: 80px;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 25px;
 }
+button:hover { filter: brightness(1.5); }

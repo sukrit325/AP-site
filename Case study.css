@@ -1,42 +1,37 @@
 .head {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-body{
-    background-color: #9fe5d2;
+    max-width: 900px;
+    width: 40cm;
+    margin: 2rem auto;
+    font-family: Rubik;
 }
 .mainheading {
     text-align: center;
-    font-size: 50px;
-    color: #32236c;
+    background: linear-gradient(90deg, #065f46, #0891b2);
+    font-size: 130px;
+}
+body{
+    background: #0f172a;
+    color: #e2e8f0;
+    margin-left: 10cm;
+    margin-right: 10cm;
+    font-style: oblique;
 }
 img {
-    display: inline;
-    width: 500px;
-    height: 500px;
-    margin-left: 900px;
-    margin-right: 100px;
-    margin-top: 0px;
-    margin-bottom: 120px;
-    border-radius: 10px;
+    display: block;
+    width: 1400px;
+    align-items: right;
+    margin-left: 15cm;
 }
 
 .sub-title {
-    margin-left: 2cm;
-    margin-right: 3cm;
-    font-size: 45px;
-    color: #23194d;
+    font-size: 100px;
 }
 .sub-heading{
-    margin-left: 2cm;
-    margin-right: 4cm;
-    font-size: 40px;
-    color: #47329a;
+    font-size: 100px;
 }
 .text {
-    margin-left: 7cm;
-    margin-right: 25cm;
-    font-size: 35px;
-    color: #150f2e;
+    font-size: 80px;
+}
+.sub-text {
+    font-size: 80px;
 }

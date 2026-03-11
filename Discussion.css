@@ -1,17 +1,19 @@
-.head {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+body {
+    margin-left: 10cm;
+    margin-right: 10cm;
+    background: #0f172a;
+    color: #e2e8f0;
+    font-size: 30px;
+    font-style: oblique;
 }
 .heading {
-    font-size: 30px;
+    background: linear-gradient(90deg, #065f46, #0891b2);
+    font-size: 100px;
     text-align: center;
 }
-img {
-    width: 10cm;
-}
 div {
-    margin-left: 5cm;
-    margin-right: 5cm;
-    font-size: 25pt;
+    font-size: 80px;
+}
+img {
+    width: 30cm;
 }
