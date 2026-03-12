@@ -1,0 +1,72 @@
+div {
+    font-size: 110px;
+    font-style: oblique;
+}
+.Chronicles {
+    font-size: 110px;
+}
+body {
+    background: #0B1020;
+    color: #EAF2FF;
+    position: relative;
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    margin-left: 10cm;
+    margin-right: 10cm;
+    margin-top: 2cm;
+}
+
+input {
+    display: block;
+    width: 500px;
+    height: 90px;
+    font-size: 50px;
+    position: absolute;
+    right: 20px;
+    margin-right: 160px;
+    border-radius: 40px;
+    color: black;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.card {
+    margin-left: 10px;
+    margin-right: auto;
+    font-size: 50px;
+    text-align: center;
+    background: rgb(77, 128, 145);
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 1150px;
+    border: 14px solid black;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    font-style: oblique;
+}
+.content-container {
+    display: flex;
+    align-items: center;
+    margin-top: -180px;
+}
+.button-container {
+    display: flex;
+    justify-content: left;
+    margin-top: -120px;
+}
+img {
+    width: 25cm;
+    border-radius: 25px;
+    height: auto;
+}
+button {
+    background-color: #33D1FF;
+    color: #0A1A2B;
+    width: 400px;
+    height: 200px;
+    font-size: 80px;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 25px;
+}
+button:hover { filter: brightness(1.5); }

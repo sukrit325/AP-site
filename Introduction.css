@@ -1,0 +1,19 @@
+body {
+    margin-left: 10cm;
+    margin-right: 10cm;
+
+    color: #e2e8f0;
+    font-size: 30px;
+    font-style: oblique;
+}
+.head {
+    background: linear-gradient(90deg, #065f46, #0891b2);
+    font-size: 100px;
+    text-align: center;
+}
+div {
+    font-size: 70px;
+}
+img {
+    width: 30cm;
+}

@@ -1,0 +1,27 @@
+body {
+    background: #0f172a;
+    color: #e2e8f0;
+    font-size: 90px;
+    font-style: oblique;
+    margin-left: 10cm;
+    margin-right: 10cm;
+}
+.head {
+    background: linear-gradient(90deg, #065f46, #0891b2);
+    font-size: 110px;
+    text-align: center;
+}
+.text {
+    font-size: 90px;
+    margin: 5cm;
+}
+.sub-head {
+    margin-left: 3cm;
+    font-size: 100px;
+}
+img {
+    display: block;
+    width: 1400px;
+    align-items: right;
+    margin-left: 15cm;
+}
