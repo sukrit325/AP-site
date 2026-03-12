@@ -1,31 +1,327 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="Introduction.css">
-        <title>Introduction</title>
-    </head>
-    <body>
-        <div class="head"><h1>Introduction</h1></div>
-        <p>
-            <div>
-            Semiconductors are materials with electrical conductivity between conductors and insulators. Their conductivity can be precisely controlled through temperature changes, doping (adding impurities), or applied electric fields, making them essential for modern electronics.
-            They form the foundation of devices such as diodes, transistors, integrated circuits (ICs), solar cells, and communication systems.
-            The most important semiconductor materials are Silicon (Si), Germanium (Ge), and Gallium Arsenide (GaAs). Each offers distinct properties:
-            <ul>
-            <li>Silicon widely used in ICs due to its stability, low cost, and mature fabrication technology</li>  
-            <li>Germanium provides high carrier mobility</li>
-            <li>Gallium Arsenide excels in high-frequency and optoelectronic applications thanks to its direct band gap and superior electron mobility</li>
-            </ul>
-            Key properties that determine device performance include:
-            <ul>
-            <li>Band gap energy affects ease of electron excitation</li>
-            <li>Carrier mobility influences device speed</li>
-            <li>Conductivity determines current flow capability</li>
-            <li>Temperature behavior impacts reliability and efficiency</li>
-            </ul>
-            This project compares the fundamental physical and electrical properties of Silicon, Germanium, and Gallium Arsenide through theoretical analysis and simulation — helping explain why certain materials are preferred for specific applications.
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction - Semiconductors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Introduction.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark sticky-top" id="navbar">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1"><i class="fas fa-microchip"></i> Chip Chronicles</span>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="btn btn-light search-btn"><i class="fas fa-search"></i></button>
             </div>
-        </p>
-        <div class="img"><img src="Graphic chip (intro).webp"></div>
-    </body>
+            <button onclick="window.location.href='Primary page.html'">
+                <i class="fas fa-arrow-left"></i> Back
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="section-badge">SECTION 1</div>
+                        <h1 class="hero-title">Introduction to<br>Semiconductors</h1>
+                        <p class="hero-description">
+                            Discover the fundamental physics and properties of semiconductor materials that power modern electronics
+                        </p>
+                        <button class="btn btn-primary btn-lg" onclick="scrollToContent()">
+                            <i class="fas fa-arrow-down"></i> Start Reading
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image-section">
+                    <img src="Graphic chip (intro).webp" alt="Semiconductor Chip" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- What Are Semiconductors Section -->
+        <section id="content" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-flask"></i> What Are Semiconductors?</h2>
+                </div>
+
+                <div class="content-card">
+                    <p class="lead-text">
+                        <strong>Semiconductors</strong> are materials with electrical conductivity between conductors and insulators. Their conductivity can be precisely controlled through temperature changes, doping (adding impurities), or applied electric fields, making them essential for modern electronics.
+                    </p>
+
+                    <div class="definition-box">
+                        <h4><i class="fas fa-lightbulb"></i> Simple Definition</h4>
+                        <p>
+                            A semiconductor is a material that can conduct electricity under certain conditions, but acts as an insulator under others. This unique property makes them perfect for controlling and amplifying electrical signals.
+                        </p>
+                    </div>
+
+                    <p class="body-text">
+                        They form the foundation of devices such as:
+                    </p>
+
+                    <div class="features-grid">
+                        <div class="feature-box">
+                            <i class="fas fa-circle"></i> Diodes
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-circle"></i> Transistors
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-circle"></i> Integrated Circuits (ICs)
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-circle"></i> Solar Cells
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-circle"></i> Communication Systems
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-circle"></i> Power Electronics
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Semiconductor Materials -->
+        <section class="materials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-atom"></i> Key Semiconductor Materials</h2>
+                </div>
+
+                <p class="intro-text">
+                    The most important semiconductor materials are Silicon (Si), Germanium (Ge), and Gallium Arsenide (GaAs). Each offers distinct properties suited for different applications:
+                </p>
+
+                <!-- Silicon Card -->
+                <div class="material-card silicon-card">
+                    <div class="material-header">
+                        <h3><i class="fas fa-gem"></i> Silicon (Si)</h3>
+                        <span class="material-badge">Most Common</span>
+                    </div>
+                    <p>
+                        Silicon is widely used in integrated circuits due to its stability, low cost, and mature fabrication technology. It dominates the semiconductor industry with over 95% market share.
+                    </p>
+                    <ul class="property-list">
+                        <li><strong>Abundance:</strong> Second most abundant element on Earth's crust</li>
+                        <li><strong>Maturity:</strong> Over 70 years of refinement in manufacturing techniques</li>
+                        <li><strong>Cost-Effective:</strong> Economical for mass production</li>
+                        <li><strong>Stability:</strong> Excellent thermal and chemical stability</li>
+                    </ul>
+                </div>
+
+                <!-- Germanium Card -->
+                <div class="material-card germanium-card">
+                    <div class="material-header">
+                        <h3><i class="fas fa-crown"></i> Germanium (Ge)</h3>
+                        <span class="material-badge">Specialized Use</span>
+                    </div>
+                    <p>
+                        Germanium provides high carrier mobility, making it valuable for specialized high-speed switching applications and infrared optics.
+                    </p>
+                    <ul class="property-list">
+                        <li><strong>Carrier Mobility:</strong> Higher than silicon for faster operation</li>
+                        <li><strong>Historical Significance:</strong> Used in the first transistors</li>
+                        <li><strong>Infrared Application:</strong> Transparent to infrared wavelengths</li>
+                        <li><strong>Thermal Imaging:</strong> Preferred material for thermal sensors</li>
+                    </ul>
+                </div>
+
+                <!-- Gallium Arsenide Card -->
+                <div class="material-card gaas-card">
+                    <div class="material-header">
+                        <h3><i class="fas fa-rocket"></i> Gallium Arsenide (GaAs)</h3>
+                        <span class="material-badge">High-Performance</span>
+                    </div>
+                    <p>
+                        Gallium Arsenide excels in high-frequency and optoelectronic applications thanks to its direct band gap and superior electron mobility.
+                    </p>
+                    <ul class="property-list">
+                        <li><strong>Direct Band Gap:</strong> Efficient light emission for LEDs and lasers</li>
+                        <li><strong>High Frequency:</strong> Superior electron velocity for RF circuits</li>
+                        <li><strong>Optoelectronics:</strong> Essential for fiber-optic communications</li>
+                        <li><strong>Radiation Hardness:</strong> Ideal for space and satellite applications</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Properties Section -->
+        <section class="properties-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-cogs"></i> Key Properties That Determine Performance</h2>
+                </div>
+
+                <div class="properties-grid">
+                    <div class="property-card">
+                        <div class="property-icon"><i class="fas fa-bolt"></i></div>
+                        <h4>Band Gap Energy</h4>
+                        <p>
+                            The energy required to excite an electron from the valence band to the conduction band. Affects ease of electron excitation and device operation.
+                        </p>
+                        <span class="impact-label">Impact: <strong>Device Voltage & Frequency</strong></span>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <h4>Carrier Mobility</h4>
+                        <p>
+                            The speed at which electrons and holes move through the material. Directly influences device speed and switching frequency capabilities.
+                        </p>
+                        <span class="impact-label">Impact: <strong>Device Speed & Frequency</strong></span>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-icon"><i class="fas fa-water"></i></div>
+                        <h4>Conductivity</h4>
+                        <p>
+                            Determines current flow capability and resistance of the material. Can be controlled through doping and applied electric fields.
+                        </p>
+                        <span class="impact-label">Impact: <strong>Current Flow & Power</strong></span>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-icon"><i class="fas fa-thermometer-half"></i></div>
+                        <h4>Temperature Behavior</h4>
+                        <p>
+                            How semiconductor properties change with temperature. Impacts reliability, efficiency, and operational temperature range.
+                        </p>
+                        <span class="impact-label">Impact: <strong>Reliability & Stability</strong></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why This Matters Section -->
+        <section class="why-matters-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-question-circle"></i> Why This Research Matters</h2>
+                </div>
+
+                <div class="importance-boxes">
+                    <div class="importance-box">
+                        <div class="box-icon"><i class="fas fa-check-circle"></i></div>
+                        <h4>Understanding Material Properties</h4>
+                        <p>
+                            By comparing the fundamental physical and electrical properties of Silicon, Germanium, and Gallium Arsenide, we can better explain why certain materials are preferred for specific applications.
+                        </p>
+                    </div>
+
+                    <div class="importance-box">
+                        <div class="box-icon"><i class="fas fa-check-circle"></i></div>
+                        <h4>Optimizing Device Design</h4>
+                        <p>
+                            Understanding material properties enables engineers to choose the right semiconductor for each application, from microprocessors to fiber-optic communications.
+                        </p>
+                    </div>
+
+                    <div class="importance-box">
+                        <div class="box-icon"><i class="fas fa-check-circle"></i></div>
+                        <h4>Future Innovation</h4>
+                        <p>
+                            As technology advances, understanding semiconductor physics becomes crucial for developing next-generation devices with improved performance and efficiency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Takeaways -->
+        <section class="takeaways-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-star"></i> Key Takeaways</h2>
+                </div>
+
+                <div class="takeaways-grid">
+                    <div class="takeaway-card">
+                        <div class="takeaway-number">1</div>
+                        <h4>What Are Semiconductors</h4>
+                        <p>Materials with controllable electrical conductivity between conductors and insulators</p>
+                    </div>
+                    <div class="takeaway-card">
+                        <div class="takeaway-number">2</div>
+                        <h4>Three Key Materials</h4>
+                        <p>Silicon (common), Germanium (specialized), Gallium Arsenide (high-performance)</p>
+                    </div>
+                    <div class="takeaway-card">
+                        <div class="takeaway-number">3</div>
+                        <h4>Critical Properties</h4>
+                        <p>Band gap, carrier mobility, conductivity, and temperature behavior</p>
+                    </div>
+                    <div class="takeaway-card">
+                        <div class="takeaway-number">4</div>
+                        <h4>Material Selection</h4>
+                        <p>Different materials excel in different applications based on their properties</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation to Next Section -->
+        <section class="navigation-section">
+            <div class="container">
+                <div class="nav-buttons">
+                    <a href="Primary page.html" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-arrow-left"></i> Back to Report
+                    </a>
+                    <a href="Problem statement.html" class="btn btn-primary btn-lg">
+                        Problem Statement <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Introduction</h5>
+                    <p>An overview of semiconductor materials and their fundamental properties.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#properties">Key Properties</a></li>
+                        <li><a href="Primary page.html">Back to Report</a></li>
+                        <li><a href="Problem statement.html">Next Section</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Report Sections</h5>
+                    <ul class="list-unstyled">
+                        <li>1. Introduction (Current)</li>
+                        <li>2. Problem Statement</li>
+                        <li>3. Objectives</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-white my-4">
+            <div class="text-center">
+                <p>&copy; 2026 Chip Chronicles - Group 10</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Introduction.js"></script>
+</body>
 </html>

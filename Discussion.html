@@ -1,21 +1,496 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Discussion</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
-        <link rel="stylesheet" href="Discussion.css">
-    </head>
-    <body>
-        <div class="heading"><h1>Discussion</h1></div>
-       <div> 
-        <p>
-        Semiconductor performance depends on material properties such as bandgap energy, carrier mobility, thermal conductivity, and critical electric field, which influence efficiency, switching speed, voltage capability, and heat tolerance. As power density and speed demands rise, wide-bandgap materials like Silicon Carbide (SiC) and Gallium Nitride (GaN) outperform traditional silicon.
-        With bandgaps around 3.2–3.4 eV (vs. 1.1 eV for silicon), they reduce leakage and operate efficiently at high temperatures. SiC offers high thermal conductivity and strong breakdown strength, making it ideal for electric vehicle inverters and high-voltage systems, though at higher cost. GaN provides high electron mobility and fast switching for RF devices, 5G, and compact chargers, despite thermal challenges.
-        Gallium arsenide (GaAs) excels in microwave and optoelectronic applications but is less suited for high power. Silicon remains dominant due to cost and manufacturing maturity.
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion - Semiconductors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Discussion.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark sticky-top" id="navbar">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1"><i class="fas fa-microchip"></i> Chip Chronicles</span>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="btn btn-light search-btn"><i class="fas fa-search"></i></button>
+                <button onclick="window.location.href='Primary page.html'">Back to Home</button>
+            </div>
         </div>
-        </p>
-        <div class="img"><img src="semiconductor(discussion).jpg"></div>
-    </body>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-12">
+                    <div class="hero-content text-center">
+                        <div class="section-badge">SECTION 6</div>
+                        <h1 class="hero-title">Discussion & Analysis</h1>
+                        <p class="hero-description">
+                            In-depth examination of semiconductor materials and their performance characteristics
+                        </p>
+                        <button class="btn btn-primary btn-lg" onclick="scrollToContent()">
+                            <i class="fas fa-arrow-down"></i> Start Reading
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Introduction Section -->
+        <section class="discussion-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-comments"></i> Overview</h2>
+                </div>
+
+                <div class="content-box">
+                    <p class="intro-text">
+                        Semiconductor performance is fundamentally determined by a complex interplay of material properties including bandgap energy, carrier mobility, thermal conductivity, and critical electric field strength. These intrinsic characteristics directly influence device efficiency, switching speed, voltage capability, and thermal tolerance—critical factors in modern electronics.
+                    </p>
+
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-lightbulb"></i> Key Insight</h4>
+                        <p>As power density and speed demands continue to rise in modern applications, wide-bandgap materials like Silicon Carbide (SiC) and Gallium Nitride (GaN) have emerged as superior alternatives to traditional silicon, revolutionizing high-power and high-frequency device design.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Material Comparison Section -->
+        <section class="discussion-section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-balance-scale"></i> Material Properties Comparison</h2>
+                </div>
+
+                <div class="comparison-cards">
+                    <!-- Silicon Card -->
+                    <div class="material-comparison-card silicon">
+                        <div class="card-header si">
+                            <i class="fas fa-gem"></i>
+                            <h3>Silicon (Si)</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="property-item">
+                                <span class="property-label">Band Gap:</span>
+                                <span class="property-value">1.1 eV</span>
+                            </div>
+                            <div class="property-item">
+                                <span class="property-label">Thermal Conductivity:</span>
+                                <span class="property-value">150 W/m·K</span>
+                            </div>
+                            <div class="property-item">
+                                <span class="property-label">Carrier Mobility:</span>
+                                <span class="property-value">1,350 cm²/V·s</span>
+                            </div>
+                            <div class="property-item">
+                                <span class="property-label">Breakdown Field:</span>
+                                <span class="property-value">~0.3 MV/cm</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <h5><i class="fas fa-check-circle"></i> Strengths</h5>
+                            <ul>
+                                <li>Cost-effective</li>
+                                <li>Mature manufacturing</li>
+                                <li>Excellent compatibility</li>
+                                <li>Industry standard</li>
+                            </ul>
+                            <h5><i class="fas fa-times-circle"></i> Limitations</h5>
+                            <ul>
+                                <li>High leakage current</li>
+                                <li>Temperature limited</li>
+                                <li>Lower efficiency</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Gallium Nitride Card -->
+                    <div class="material-comparison-card gan">
+                        <div class="card-header gan-bg">
+                            <i class="fas fa-bolt"></i>
+                            <h3>Gallium Nitride (GaN)</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="property-item">
+                                <span class="property-label">Band Gap:</span>
+                                <span class="property-value">3.4 eV</span>
+                            </div>
+                            <div class="property-item">
+                                <span class="property-label">Thermal Conductivity:</span>
+                                <span class="property-value">130-200 W/m·K</span>
+                            </div>
+                            <div class="property-item">
+                                <span class="property-label">Carrier Mobility:</span>
+                                <span class="property-value">1,500-2,000 cm²/V·s</span>
+                            </div>
+                            <div class="property-item">
+                                <span class="property-label">Breakdown Field:</span>
+                                <span class="property-value">~3.3 MV/cm</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <h5><i class="fas fa-check-circle"></i> Strengths</h5>
+                            <ul>
+                                <li>High electron mobility</li>
+                                <li>Fast switching speeds</li>
+                                <li>Lower leakage</li>
+                                <li>Compact design</li>
+                            </ul>
+                            <h5><i class="fas fa-times-circle"></i> Limitations</h5>
+                            <ul>
+                                <li>Higher cost</li>
+                                <li>Complex fabrication</li>
+                                <li>Thermal management needed</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Silicon Carbide Card -->
+                    <div class="material-comparison-card sic">
+                        <div class="card-header sic-bg">
+                            <i class="fas fa-fire"></i>
+                            <h3>Silicon Carbide (SiC)</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="property-item">
+                                <span class="property-label">Band Gap:</span>
+                                <span class="property-value">3.2 eV</span>
+                            </div>
+                            <div class="property-item">
+                                <span class="property-label">Thermal Conductivity:</span>
+                                <span class="property-value">360 W/m·K</span>
+                            </div>
+                            <div class="property-item">
+                                <span class="property-label">Carrier Mobility:</span>
+                                <span class="property-value">900-1,200 cm²/V·s</span>
+                            </div>
+                            <div class="property-item">
+                                <span class="property-label">Breakdown Field:</span>
+                                <span class="property-value">~2.2 MV/cm</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <h5><i class="fas fa-check-circle"></i> Strengths</h5>
+                            <ul>
+                                <li>Exceptional thermal conductivity</li>
+                                <li>High breakdown strength</li>
+                                <li>Wide temperature range</li>
+                                <li>Very low leakage</li>
+                            </ul>
+                            <h5><i class="fas fa-times-circle"></i> Limitations</h5>
+                            <ul>
+                                <li>Premium cost</li>
+                                <li>Complex processing</li>
+                                <li>Limited availability</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Gallium Arsenide Card -->
+                    <div class="material-comparison-card gaas">
+                        <div class="card-header gaas-bg">
+                            <i class="fas fa-wave-square"></i>
+                            <h3>Gallium Arsenide (GaAs)</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="property-item">
+                                <span class="property-label">Band Gap:</span>
+                                <span class="property-value">1.43 eV</span>
+                            </div>
+                            <div class="property-item">
+                                <span class="property-label">Thermal Conductivity:</span>
+                                <span class="property-value">46 W/m·K</span>
+                            </div>
+                            <div class="property-item">
+                                <span class="property-label">Carrier Mobility:</span>
+                                <span class="property-value">8,500 cm²/V·s</span>
+                            </div>
+                            <div class="property-item">
+                                <span class="property-label">Breakdown Field:</span>
+                                <span class="property-value">~0.4 MV/cm</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <h5><i class="fas fa-check-circle"></i> Strengths</h5>
+                            <ul>
+                                <li>Highest mobility</li>
+                                <li>Direct band gap</li>
+                                <li>Optoelectronic capable</li>
+                                <li>Light emission</li>
+                            </ul>
+                            <h5><i class="fas fa-times-circle"></i> Limitations</h5>
+                            <ul>
+                                <li>Poor thermal conductivity</li>
+                                <li>Limited power capability</li>
+                                <li>High cost</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wide Bandgap Materials Section -->
+        <section class="discussion-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-star"></i> Wide Bandgap Materials Revolution</h2>
+                </div>
+
+                <div class="content-box">
+                    <p class="intro-text">
+                        Wide-bandgap (WBG) semiconductors with bandgaps of 3.2–3.4 eV represent a paradigm shift in device design. Compared to silicon's 1.1 eV bandgap, WBG materials dramatically reduce leakage current and enable superior high-temperature operation.
+                    </p>
+
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon"><i class="fas fa-bolt"></i></div>
+                            <h4>Higher Efficiency</h4>
+                            <p>Reduced leakage current and lower on-state resistance lead to improved power efficiency and lower heat dissipation</p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon"><i class="fas fa-thermometer-high"></i></div>
+                            <h4>Temperature Stability</h4>
+                            <p>Wider bandgap enables reliable operation at elevated temperatures without significant performance degradation</p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon"><i class="fas fa-rocket"></i></div>
+                            <h4>Switching Speed</h4>
+                            <p>High electron mobility and reduced capacitance enable faster switching frequencies and higher power density</p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon"><i class="fas fa-cube"></i></div>
+                            <h4>Compact Design</h4>
+                            <p>Superior performance allows for smaller device sizes and lighter system designs with improved portability</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SiC Applications Section -->
+        <section class="discussion-section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-industry"></i> Silicon Carbide (SiC) Applications</h2>
+                </div>
+
+                <div class="content-box">
+                    <p class="intro-text">
+                        Silicon Carbide excels in power conversion and thermal management with exceptional thermal conductivity (360 W/m·K) and high breakdown strength, making it ideal for demanding applications requiring operation under extreme conditions.
+                    </p>
+
+                    <div class="application-grid">
+                        <div class="app-card">
+                            <div class="app-number">1</div>
+                            <h4><i class="fas fa-car"></i> Electric Vehicle Inverters</h4>
+                            <p>SiC MOSFETs reduce energy losses by 50% compared to silicon, improving EV range by 10-15% while maintaining thermal stability</p>
+                            <span class="app-tag">High Power - Critical Application</span>
+                        </div>
+
+                        <div class="app-card">
+                            <div class="app-number">2</div>
+                            <h4><i class="fas fa-plug"></i> High-Voltage Power Systems</h4>
+                            <p>Superior breakdown field strength enables operation at higher voltages with reduced component count and system complexity</p>
+                            <span class="app-tag">Transmission & Distribution</span>
+                        </div>
+
+                        <div class="app-card">
+                            <div class="app-number">3</div>
+                            <h4><i class="fas fa-solar-panel"></i> Solar Inverters</h4>
+                            <p>Enhanced efficiency translates to higher energy conversion rates and improved system reliability in renewable energy applications</p>
+                            <span class="app-tag">Green Energy Solution</span>
+                        </div>
+
+                        <div class="app-card">
+                            <div class="app-number">4</div>
+                            <h4><i class="fas fa-fan"></i> Industrial Equipment</h4>
+                            <p>Enables higher operating temperatures and superior reliability in harsh industrial environments with reduced cooling requirements</p>
+                            <span class="app-tag">Manufacturing & Industry</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GaN Applications Section -->
+        <section class="discussion-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-5g"></i> Gallium Nitride (GaN) Applications</h2>
+                </div>
+
+                <div class="content-box">
+                    <p class="intro-text">
+                        Gallium Nitride provides high electron mobility and fast switching capabilities, revolutionizing RF, microwave, and high-frequency applications with significantly improved performance and miniaturization potential.
+                    </p>
+
+                    <div class="application-grid">
+                        <div class="app-card">
+                            <div class="app-number">1</div>
+                            <h4><i class="fas fa-tower-broadcast"></i> 5G Base Stations</h4>
+                            <p>GaN RF amplifiers enable higher data rates and better coverage with improved power efficiency compared to traditional components</p>
+                            <span class="app-tag">Telecommunications</span>
+                        </div>
+
+                        <div class="app-card">
+                            <div class="app-number">2</div>
+                            <h4><i class="fas fa-plug"></i> Fast Charging Systems</h4>
+                            <p>GaN chargers achieve 65-100W output in compact form factors, reducing charging time with enhanced thermal management</p>
+                            <span class="app-tag">Consumer Electronics</span>
+                        </div>
+
+                        <div class="app-card">
+                            <div class="app-number">3</div>
+                            <h4><i class="fas fa-wifi"></i> Microwave & RF Devices</h4>
+                            <p>Superior frequency response and power density enable advanced radar systems, satellite communications, and military applications</p>
+                            <span class="app-tag">High-Frequency Systems</span>
+                        </div>
+
+                        <div class="app-card">
+                            <div class="app-number">4</div>
+                            <h4><i class="fas fa-zap"></i> Power Amplifiers</h4>
+                            <p>Next-generation amplifiers leveraging GaN's switching speed for improved signal integrity and reduced power consumption</p>
+                            <span class="app-tag">Communications Infrastructure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Analysis Section -->
+        <section class="discussion-section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-image"></i> Performance Analysis</h2>
+                </div>
+
+                <div class="image-container">
+                    <img src="semiconductors (discussion).jpeg" alt="Semiconductor Performance Comparison" class="analysis-image">
+                    <div class="image-caption">
+                        <h4><i class="fas fa-chart-line"></i> Comparative Performance Metrics</h4>
+                        <p>Visual representation showing the performance characteristics and capabilities of different semiconductor materials across key parameters.</p>
+                    </div>
+                </div>
+
+                <div class="analysis-insights">
+                    <h4><i class="fas fa-microscope"></i> Key Findings</h4>
+                    <div class="insight-items">
+                        <div class="insight-item">
+                            <h5><i class="fas fa-check"></i> Temperature Performance</h5>
+                            <p>SiC and GaN maintain stable performance up to 200°C+, while silicon shows significant degradation above 150°C, making WBG materials essential for harsh environments.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h5><i class="fas fa-check"></i> Efficiency Gains</h5>
+                            <p>WBG devices reduce switching losses by 50-70%, translating to system-level efficiency improvements of 5-15% depending on application.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h5><i class="fas fa-check"></i> Cost-Benefit Trade-off</h5>
+                            <p>While WBG materials cost 2-5x more than silicon, the system-level benefits in efficiency, size, and lifetime often justify the investment in high-power applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusions Section -->
+        <section class="discussion-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-check-circle"></i> Conclusions</h2>
+                </div>
+
+                <div class="conclusions-box">
+                    <div class="conclusion-item">
+                        <div class="item-number">1</div>
+                        <h4>Silicon Remains Dominant</h4>
+                        <p>Despite emerging alternatives, silicon maintains dominance in consumer electronics due to unmatched cost, manufacturing maturity, and ecosystem maturity. Its 70-year manufacturing heritage ensures reliable supply chains and proven reliability.</p>
+                    </div>
+
+                    <div class="conclusion-item">
+                        <div class="item-number">2</div>
+                        <h4>Wide-Bandgap Transformation</h4>
+                        <p>WBG materials (SiC and GaN) are revolutionizing high-power and high-frequency applications, with market growth rates exceeding 20% annually. These materials are becoming essential for future power electronics and RF systems.</p>
+                    </div>
+
+                    <div class="conclusion-item">
+                        <div class="item-number">3</div>
+                        <h4>Application-Specific Selection</h4>
+                        <p>Material selection must be guided by specific application requirements: cost sensitivity favors silicon, high-frequency needs favor GaN, and thermal/power demands favor SiC for optimal system performance and cost efficiency.</p>
+                    </div>
+
+                    <div class="conclusion-item">
+                        <div class="item-number">4</div>
+                        <h4>Future Outlook</h4>
+                        <p>Emerging materials like gallium oxide and diamond semiconductors promise even higher performance at lower costs, potentially displacing current wide-bandgap materials within the next 5-10 years as manufacturing processes mature.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation to Next Section -->
+        <section class="navigation-section">
+            <div class="container">
+                <div class="nav-buttons">
+                    <a href="Manufacturing Process.html" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-arrow-left"></i> Manufacturing
+                    </a>
+                    <a href="Conclusion.html" class="btn btn-primary btn-lg">
+                        Conclusion <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Discussion & Analysis</h5>
+                    <p>Comprehensive examination of semiconductor material properties and applications.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="Manufacturing Process.html">Manufacturing</a></li>
+                        <li><a href="Primary page.html">Back to Report</a></li>
+                        <li><a href="Conclusion.html">Next Section</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Report Sections</h5>
+                    <ul class="list-unstyled">
+                        <li>1. Introduction</li>
+                        <li>2. Problem Statement</li>
+                        <li>3. Objectives</li>
+                        <li>4. Methodology</li>
+                        <li>5. Manufacturing</li>
+                        <li>6. Discussion (Current)</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-white my-4">
+            <div class="text-center">
+                <p>&copy; 2026 Chip Chronicles - Group 10</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Discussion.js"></script>
+</body>
 </html>
