@@ -1,11 +1,6 @@
-.head {
-    max-width: 900px;
-    width: 40cm;
-    margin: 2rem auto;
-    font-family: Rubik;
-}
 .heading {
     text-align: center;
+    font-size: 100px;
     background: linear-gradient(90deg, #065f46, #0891b2);
 }
 body {
@@ -15,7 +10,9 @@ body {
     font-style: oblique;
     margin-left: 10cm;
     margin-right: 10cm;
+    display: block;
+    align-items: center;
 }
 img {
-    width: 20cm;
+    width: 30cm;
 }
