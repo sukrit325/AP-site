@@ -1,0 +1,25 @@
+name: Deploy Second Branch to Subfolder
+
+on:
+  push:
+    branches:
+      - AI # Change this to your second branch name
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Second Branch
+        uses: actions/checkout@v4
+        with:
+          ref: AI # Change this to your second branch name
+
+      - name: Deploy to GitHub Pages Branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: . # The folder in your second branch to deploy
+          target-folder: AI # The subfolder name on your website
+          branch: main # The branch GitHub Pages is actually using
