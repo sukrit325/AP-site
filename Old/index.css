@@ -1,0 +1,102 @@
+div {
+    font-size: 60px;
+    font-style: oblique;
+}
+.Chronicles {
+    font-size: 3rem;
+}
+body {
+    background: #0B1020;
+    color: #EAF2FF;
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+}
+
+input {
+ display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+    border-radius: 30px;
+    color: black;
+    padding: 10px 20px;
+}
+.card {    
+    font-size: 1.5rem;
+    text-align: center;
+    background: rgb(77, 128, 145);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    border: 5px solid black;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    font-style: oblique;
+}
+.content-container {
+    display: flex;
+    align-items: center;
+    margin-top: -180px;
+}
+.button-container {
+    display: flex;
+    justify-content: left;
+    margin-top: -120px;
+}
+img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+}
+button {
+    background-color: #33D1FF;
+    color: #0A1A2B;
+    width: 200px;
+    height: 70px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 15px;
+}
+button:hover { filter: brightness(1.5); }
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input { display: none; }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 24px;
+  top: 0; left: 0; right: 0; bottom: 0;
+  transition: 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background-color: #6366f1;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
