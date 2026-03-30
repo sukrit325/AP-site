@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Apple Silicon Chip</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Case study.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark sticky-top" id="navbar">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1"><i class="fas fa-microchip"></i> Apple Silicon</span>
+            <button class="btn btn-outline-light" onclick="toggleTOC()">Table of Contents</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">Apple Silicon Chip Revolution</h1>
+                    <p class="lead mb-4">How semiconductor innovation transformed computing efficiency and performance</p>
+                    <div class="btn-group gap-3">
+                        <button class="btn btn-light btn-lg" onclick="scrollToSection('intro')">Learn More</button>
+                        <button class="btn btn-outline-light btn-lg" onclick="scrollToSection('conclusion')">Skip to End</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fas fa-apple fa-10x text-light opacity-50"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table of Contents (Collapsible) -->
+    <div id="tocPanel" class="toc-panel">
+        <h5>Contents</h5>
+        <ul>
+            <li><a href="#gallery">Image Gallery</a></li>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#problem">Problem Statement</a></li>
+            <li><a href="#technical">Technical Background</a></li>
+            <li><a href="#cmos">CMOS Technology</a></li>
+            <li><a href="#performance">Performance Optimization</a></li>
+            <li><a href="#impact">Real-world Impact</a></li>
+            <li><a href="#physics">Semiconductor Physics</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <!-- Overview -->
+        <section class="overview-section mb-5">
+            <div class="overview-card">
+                <h2 class="mb-4">Overview</h2>
+                <p class="fs-5">The transition to Apple Silicon (M-series chips) in 2020 represents a landmark achievement in semiconductor design and fabrication. By shifting from Intel x86 processors to custom ARM-based System-on-Chip (SoC) designs manufactured using advanced CMOS processes, Apple achieved unprecedented performance-per-watt efficiency.</p>
+                <div class="row g-3 mt-4">
+                    <div class="col-md-4">
+                        <div class="stat-card">
+                            <div class="stat-number">16B→28B+</div>
+                            <div class="stat-label">Transistors (M1→M4)</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-card">
+                            <div class="stat-number">2-3×</div>
+                            <div class="stat-label">Performance Gain</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-card">
+                            <div class="stat-number">20hrs</div>
+                            <div class="stat-label">Battery Life</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery -->
+        <section id="gallery" class="content-section mb-5">
+            <div class="section-header">
+                <h2>Image Gallery</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <img src="Apple chip.png" alt="Image 1" class="img-fluid rounded gallery-img">
+                </div>
+                <div class="col-md-6">
+                    <img src="Apple x intel chip.png" alt="Image 2" class="img-fluid rounded gallery-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Introduction -->
+        <section id="intro" class="content-section mb-5">
+            <div class="section-header">
+                <h2>1. Introduction</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <p>In 2020, Apple launched the M1, the first in its M-series lineup of custom silicon chips. These are ARM-architecture SoCs fabricated by TSMC using cutting-edge CMOS technology on shrinking process nodes (from 5nm to 3nm and beyond).</p>
+                    <p>The semiconductor foundation allows billions of transistors to be packed into a single die, integrating CPU, GPU, Neural Engine, unified memory, and I/O controllers for superior efficiency and control over hardware-software integration.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-box">
+                        <h5><i class="fas fa-info-circle"></i> Key Innovation</h5>
+                        <p>ARM-based SoC architecture with integrated components on a single die</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Problem Statement -->
+        <section id="problem" class="content-section mb-5">
+            <div class="section-header">
+                <h2>2. Problem Statement</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="problem-box problem">
+                        <h5><i class="fas fa-times-circle"></i> Intel x86 Challenges</h5>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fas fa-check"></i> High power draw</li>
+                            <li><i class="fas fa-check"></i> Excessive heat generation</li>
+                            <li><i class="fas fa-check"></i> Limited battery life</li>
+                            <li><i class="fas fa-check"></i> Suboptimal hardware-software synergy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="problem-box solution">
+                        <h5><i class="fas fa-star"></i> Apple's Goals</h5>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fas fa-arrow-right"></i> Dramatically higher performance</li>
+                            <li><i class="fas fa-arrow-right"></i> Radically lower power consumption</li>
+                            <li><i class="fas fa-arrow-right"></i> Extended battery life</li>
+                            <li><i class="fas fa-arrow-right"></i> Tighter ecosystem integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Technical Background -->
+        <section id="technical" class="content-section mb-5">
+            <div class="section-header">
+                <h2>3. Technical Background</h2>
+            </div>
+            <p>Apple M-series chips leverage advanced CMOS fabrication with key innovations:</p>
+            
+            <div class="accordion" id="techAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#process">
+                            Process Nodes & Integration
+                        </button>
+                    </h2>
+                    <div id="process" class="accordion-collapse collapse show" data-bs-parent="#techAccordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><strong>5nm (M1/M2):</strong> Starting point with exceptional density</li>
+                                <li><strong>3nm (M3/M4):</strong> Advanced node enabling higher transistor count</li>
+                                <li><strong>SoC Integration:</strong> All components on one die, minimizing delays and power overhead</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#scaling">
+                            Transistor Scaling Progress
+                        </button>
+                    </h2>
+                    <div id="scaling" class="accordion-collapse collapse" data-bs-parent="#techAccordion">
+                        <div class="accordion-body">
+                            <div class="scaling-chart">
+                                <div class="scaling-bar" style="width: 60%; background: #667eea;"><strong>M1 (5nm)</strong><br>16B transistors</div>
+                                <div class="scaling-bar" style="width: 73%; background: #764ba2;"><strong>M2 (5nm)</strong><br>20B transistors</div>
+                                <div class="scaling-bar" style="width: 89%; background: #f093fb;"><strong>M3 (3nm)</strong><br>25B transistors</div>
+                                <div class="scaling-bar" style="width: 100%; background: #4facfe;"><strong>M4 (3nm)</strong><br>28B+ transistors</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: CMOS Technology -->
+        <section id="cmos" class="content-section mb-5">
+            <div class="section-header">
+                <h2>4. How CMOS Technology Drives Efficiency</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                        <h5>Low Static Power</h5>
+                        <p>Power consumed mostly during transistor switching, enabling always-on features without battery drain</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-microchip"></i></div>
+                        <h5>High Density</h5>
+                        <p>Billions of transistors efficiently packed, scaling from 16B in M1 to 25B+ in M3</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h5>Noise Immunity</h5>
+                        <p>Complementary PMOS/NMOS pairs provide robust signal integrity and scalability</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-zap"></i></div>
+                        <h5>Advanced Nodes</h5>
+                        <p>5nm → 3nm shrinking boosts density and speed while cutting power per operation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Performance Optimization -->
+        <section id="performance" class="content-section mb-5">
+            <div class="section-header">
+                <h2>5. Performance vs. Power Optimization</h2>
+            </div>
+            <div class="performance-grid">
+                <div class="performance-item">
+                    <h5><i class="fas fa-rocket"></i> Performance Cores</h5>
+                    <p>High-performance CPU cores for demanding tasks like video editing and 3D rendering</p>
+                </div>
+                <div class="performance-item">
+                    <h5><i class="fas fa-leaf"></i> Efficiency Cores</h5>
+                    <p>Optimized cores for everyday tasks like browsing, email, and document editing</p>
+                </div>
+                <div class="performance-item">
+                    <h5><i class="fas fa-fan"></i> Thermal Benefits</h5>
+                    <p>Fanless designs in MacBook Air and silent operation even under full load</p>
+                </div>
+                <div class="performance-item">
+                    <h5><i class="fas fa-brain"></i> Neural Engine</h5>
+                    <p>Dedicated AI accelerator for machine learning and on-device intelligence</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Real-world Impact -->
+        <section id="impact" class="content-section mb-5">
+            <div class="section-header">
+                <h2>6. Real-world Impact</h2>
+            </div>
+            <div class="impact-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">2-3×</div>
+                    <p><strong>Faster Performance</strong> vs Intel-era Macs</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">18-20h</div>
+                    <p><strong>Extended Battery Life</strong> on single charge</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">Silent</div>
+                    <p><strong>Fanless Operation</strong> with zero noise</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">AI</div>
+                    <p><strong>Superior ML Performance</strong> via Neural Engine</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Physics Perspective -->
+        <section id="physics" class="content-section mb-5">
+            <div class="section-header">
+                <h2>7. Semiconductor Physics Perspective</h2>
+            </div>
+            <div class="physics-grid">
+                <div class="physics-card">
+                    <h5>CMOS Static Power Reduction</h5>
+                    <p>Complementary PMOS/NMOS pairs minimize leakage current and standby power consumption</p>
+                </div>
+                <div class="physics-card">
+                    <h5>Dennard Scaling & Moore's Law</h5>
+                    <p>Smaller nodes increase density while controlling power and heat dissipation through voltage scaling</p>
+                </div>
+                <div class="physics-card">
+                    <h5>Material Engineering</h5>
+                    <p>High-κ dielectrics, FinFET, and GAAFET transistors enable nanoscale fabrication with reduced leakage</p>
+                </div>
+                <div class="physics-card">
+                    <h5>Parasitic Reduction</h5>
+                    <p>Tight SoC integration reduces capacitance and inductance, improving efficiency and signal integrity</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Conclusion -->
+        <section id="conclusion" class="content-section mb-5">
+            <div class="section-header">
+                <h2>8. Conclusion</h2>
+            </div>
+            <div class="conclusion-card">
+                <p class="conclusion-text">Apple Silicon showcases how advanced CMOS semiconductor fabrication—combined with intelligent SoC architecture—redefines computing efficiency. By leveraging nanoscale transistor scaling, low-leakage CMOS properties, and massive integration of billions of transistors on a single die, Apple achieved breakthroughs in performance, power, and thermal management.</p>
+                <p class="conclusion-text">This case illustrates how semiconductor innovations directly drive real-world advancements in modern devices, setting a benchmark for the industry and demonstrating the critical importance of semiconductor physics and engineering in shaping the future of computing.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About This Case Study</h5>
+                    <p>An in-depth analysis of Apple Silicon's semiconductor revolution and its industry impact.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Key Technologies</h5>
+                    <ul class="list-unstyled">
+                        <li>ARM Architecture</li>
+                        <li>CMOS Process</li>
+                        <li>TSMC Fabrication</li>
+                        <li>SoC Integration</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p>For more information about semiconductor technology and chip design.</p>
+                </div>
+            </div>
+            <hr class="bg-white my-4">
+            <div class="text-center">
+                <p>&copy; 2026 AP Site. All rights reserved. | Design by GitHub Copilot</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Case study.js"></script>
+</body>
+</html>
