@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacturing Process - Semiconductors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Manufacturing Process.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark sticky-top" id="navbar">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1"><i class="fas fa-microchip"></i> Chip Chronicles</span>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="btn btn-light search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <a href="index.html" class="btn btn-outline-light">
+                <i class="fas fa-arrow-left"></i> Back
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-12">
+                    <div class="hero-content text-center">
+                        <div class="section-badge">SECTION 5</div>
+                        <h1 class="hero-title">Manufacturing Process</h1>
+                        <p class="hero-description">
+                            Comprehensive guide to semiconductor fabrication and experimental methodology
+                        </p>
+                        <button class="btn btn-primary btn-lg" onclick="scrollToContent()">
+                            <i class="fas fa-arrow-down"></i> Start Reading
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Materials Section -->
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-boxes"></i> Materials Required</h2>
+                </div>
+
+                <div class="materials-grid">
+                    <div class="material-card">
+                        <div class="material-icon"><i class="fas fa-gem"></i></div>
+                        <h4>Semiconductor Wafers</h4>
+                        <ul class="material-list">
+                            <li>Silicon wafer</li>
+                            <li>Pure Germanium wafer</li>
+                            <li>Gallium Arsenide wafer</li>
+                        </ul>
+                    </div>
+
+                    <div class="material-card">
+                        <div class="material-icon"><i class="fas fa-flask-vial"></i></div>
+                        <h4>Doping Materials</h4>
+                        <ul class="material-list">
+                            <li>Boron (p-type dopant)</li>
+                            <li>Phosphorus (n-type dopant)</li>
+                            <li>High purity precursors</li>
+                        </ul>
+                    </div>
+
+                    <div class="material-card">
+                        <div class="material-icon"><i class="fas fa-link"></i></div>
+                        <h4>Metal Contacts</h4>
+                        <ul class="material-list">
+                            <li>Aluminium contacts</li>
+                            <li>Gold wire bonding</li>
+                            <li>Silver paste</li>
+                        </ul>
+                    </div>
+
+                    <div class="material-card">
+                        <div class="material-icon"><i class="fas fa-droplet"></i></div>
+                        <h4>Cleaning Chemicals</h4>
+                        <ul class="material-list">
+                            <li>Nitric acid (HNO₃)</li>
+                            <li>Hydrofluoric acid (HF)</li>
+                            <li>Distilled water</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipment Section -->
+        <section class="process-section equipment-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-tools"></i> Equipment Required</h2>
+                </div>
+
+                <div class="equipment-grid">
+                    <div class="equipment-card">
+                        <div class="eq-icon"><i class="fas fa-fire"></i></div>
+                        <h4>Furnace</h4>
+                        <p>High-temperature heating for diffusion and annealing processes</p>
+                        <span class="spec">Temperature Range: 900-1200°C</span>
+                    </div>
+
+                    <div class="equipment-card">
+                        <div class="eq-icon"><i class="fas fa-gauge-high"></i></div>
+                        <h4>Multimeter</h4>
+                        <p>Measurement of voltage, current, and resistance</p>
+                        <span class="spec">Accuracy: ±0.5%</span>
+                    </div>
+
+                    <div class="equipment-card">
+                        <div class="eq-icon"><i class="fas fa-plug"></i></div>
+                        <h4>Power Supply</h4>
+                        <p>Controlled electrical supply for device testing</p>
+                        <span class="spec">Output: 0-100V, 0-10A</span>
+                    </div>
+
+                    <div class="equipment-card">
+                        <div class="eq-icon"><i class="fas fa-thermometer"></i></div>
+                        <h4>Thermometer</h4>
+                        <p>Temperature monitoring during heating processes</p>
+                        <span class="spec">Range: -50 to 300°C</span>
+                    </div>
+
+                    <div class="equipment-card">
+                        <div class="eq-icon"><i class="fas fa-microscope"></i></div>
+                        <h4>Microscope</h4>
+                        <p>Inspection of wafer surfaces and device structures</p>
+                        <span class="spec">Magnification: 100x - 1000x</span>
+                    </div>
+
+                    <div class="equipment-card">
+                        <div class="eq-icon"><i class="fas fa-shield"></i></div>
+                        <h4>Safety Equipment</h4>
+                        <p>Clean room suit, gloves, and mask for protection</p>
+                        <span class="spec">ISO Class 6 Cleanroom</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Method Section -->
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-list-check"></i> Experimental Procedure</h2>
+                </div>
+
+                <div class="procedure-timeline">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Wafer Preparation</h4>
+                            <p>Select equal-size wafers of Silicon, Germanium, and Gallium Arsenide with standardized dimensions.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Cleaning Process</h4>
+                            <p>Clean wafers thoroughly using acid solutions and distilled water to remove contaminants and surface oxides.</p>
+                            <div class="sub-steps">
+                                <span class="sub-step">Rinse with dilute acid</span>
+                                <span class="sub-step">Distilled water wash</span>
+                                <span class="sub-step">Dry with nitrogen</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Doping Process</h4>
+                            <p>Add controlled impurities (Boron for p-type, Phosphorus for n-type) to create junctions.</p>
+                            <div class="sub-steps">
+                                <span class="sub-step">High-temperature diffusion</span>
+                                <span class="sub-step">Thermal annealing</span>
+                                <span class="sub-step">Depth control</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Device Fabrication</h4>
+                            <p>Create simple diodes or transistors from each semiconductor material.</p>
+                            <div class="sub-steps">
+                                <span class="sub-step">Pattern definition</span>
+                                <span class="sub-step">Metallization</span>
+                                <span class="sub-step">Contact formation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>Device Testing</h4>
+                            <p>Connect devices to power supply and measure electrical characteristics.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h4>Measurement & Analysis</h4>
+                            <p>Record comprehensive data on device performance and characteristics.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="measurements-box">
+                    <h4><i class="fas fa-chart-line"></i> Key Measurements</h4>
+                    <div class="measurements-grid">
+                        <div class="measurement-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>Current Flow</span>
+                        </div>
+                        <div class="measurement-item">
+                            <i class="fas fa-wave-square"></i>
+                            <span>Voltage</span>
+                        </div>
+                        <div class="measurement-item">
+                            <i class="fas fa-thermometer-half"></i>
+                            <span>Temperature Effects</span>
+                        </div>
+                        <div class="measurement-item">
+                            <i class="fas fa-stopwatch"></i>
+                            <span>Switching Speed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="process-section results-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-microscope"></i> Observations & Results</h2>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="results-table">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th class="si-col">Silicon (Si)</th>
+                                <th class="ge-col">Germanium (Ge)</th>
+                                <th class="gaas-col">Gallium Arsenide (GaAs)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Band Gap</strong></td>
+                                <td>1.12 eV (Medium)</td>
+                                <td>0.66 eV (Low)</td>
+                                <td>1.43 eV (High)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Conductivity</strong></td>
+                                <td>Moderate</td>
+                                <td>High</td>
+                                <td>Very High</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Thermal Stability</strong></td>
+                                <td>High (Up to 150°C)</td>
+                                <td>Low (Up to 100°C)</td>
+                                <td>Excellent (Up to 200°C)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Carrier Mobility</strong></td>
+                                <td>1,350 cm²/V·s</td>
+                                <td>3,900 cm²/V·s</td>
+                                <td>8,500 cm²/V·s</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Switching Speed</strong></td>
+                                <td>Moderate</td>
+                                <td>Low</td>
+                                <td>Very High</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cost</strong></td>
+                                <td>Low (Standard)</td>
+                                <td>Medium</td>
+                                <td>High (Premium)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Optical Properties</strong></td>
+                                <td>Indirect Band Gap</td>
+                                <td>IR Transparent</td>
+                                <td>Direct Band Gap</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="conclusions-grid">
+                    <div class="conclusion-card">
+                        <div class="conclusion-icon si"><i class="fas fa-gem"></i></div>
+                        <h4>Silicon (Si)</h4>
+                        <p><strong>Best for:</strong> General electronics and computing devices</p>
+                        <ul class="conclusion-list">
+                            <li>✓ Cost-effective</li>
+                            <li>✓ Excellent thermal stability</li>
+                            <li>✓ Mature manufacturing</li>
+                            <li>✓ Industry standard</li>
+                        </ul>
+                    </div>
+
+                    <div class="conclusion-card">
+                        <div class="conclusion-icon ge"><i class="fas fa-crown"></i></div>
+                        <h4>Germanium (Ge)</h4>
+                        <p><strong>Specialization:</strong> Infrared detectors and sensors</p>
+                        <ul class="conclusion-list">
+                            <li>✓ High conductivity</li>
+                            <li>✓ IR transparent</li>
+                            <li>✗ Temperature sensitive</li>
+                            <li>✗ Rarely used today</li>
+                        </ul>
+                    </div>
+
+                    <div class="conclusion-card">
+                        <div class="conclusion-icon gaas"><i class="fas fa-rocket"></i></div>
+                        <h4>Gallium Arsenide (GaAs)</h4>
+                        <p><strong>Best for:</strong> High-speed and optoelectronic devices</p>
+                        <ul class="conclusion-list">
+                            <li>✓ Fastest switching</li>
+                            <li>✓ Direct band gap</li>
+                            <li>✓ 5G & Microwave</li>
+                            <li>✓ Light emission</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="recommendations-box">
+                    <h4><i class="fas fa-lightbulb"></i> Practical Recommendations</h4>
+                    <div class="recommendation-items">
+                        <div class="rec-item">
+                            <span class="rec-number">1</span>
+                            <p><strong>Consumer Electronics:</strong> Silicon is the clear choice for CPUs, memory, and microcontrollers due to cost and reliability.</p>
+                        </div>
+                        <div class="rec-item">
+                            <span class="rec-number">2</span>
+                            <p><strong>High-Speed Applications:</strong> Gallium Arsenide excels in radar, 5G communications, and microwave systems.</p>
+                        </div>
+                        <div class="rec-item">
+                            <span class="rec-number">3</span>
+                            <p><strong>Optoelectronics:</strong> GaAs is essential for LEDs, lasers, and fiber-optic communications.</p>
+                        </div>
+                        <div class="rec-item">
+                            <span class="rec-number">4</span>
+                            <p><strong>Specialized Sensing:</strong> Germanium infrared detectors remain valuable for thermal imaging applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation to Next Section -->
+        <section class="navigation-section">
+            <div class="container">
+                <div class="nav-buttons">
+                    <a href="Methodology.html" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-arrow-left"></i> Methodology
+                    </a>
+                    <a href="Discussion.html" class="btn btn-primary btn-lg">
+                        Discussion <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Manufacturing Process</h5>
+                    <p>Detailed experimental methodology for semiconductor fabrication.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="Methodology.html">Methodology</a></li>
+                        <li><a href="index.html">Back to Report</a></li>
+                        <li><a href="Discussion.html">Next Section</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Report Sections</h5>
+                    <ul class="list-unstyled">
+                        <li>1. Introduction</li>
+                        <li>2. Problem Statement</li>
+                        <li>3. Objectives</li>
+                        <li>4. Methodology</li>
+                        <li>5. Manufacturing (Current)</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-white my-4">
+            <div class="text-center">
+                <p>&copy; 2026 Chip Chronicles - Group 10</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Manufacturing Process.js"></script>
+</body>
+</html>

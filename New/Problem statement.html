@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Statement - Semiconductors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Problem statement.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark sticky-top" id="navbar">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1"><i class="fas fa-microchip"></i> Chip Chronicles</span>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="btn btn-light search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <a href="Primary page.html" class="btn btn-outline-light">
+                <i class="fas fa-arrow-left"></i> Back
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-12">
+                    <div class="hero-content text-center">
+                        <div class="section-badge">SECTION 2</div>
+                        <h1 class="hero-title">Problem Statement</h1>
+                        <p class="hero-description">
+                            Understanding why different semiconductor materials excel in different applications
+                        </p>
+                        <button class="btn btn-primary btn-lg" onclick="scrollToContent()">
+                            <i class="fas fa-arrow-down"></i> Start Reading
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Introduction Section -->
+        <section class="intro-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-question-circle"></i> The Core Challenge</h2>
+                </div>
+
+                <div class="content-card">
+                    <p class="lead-text">
+                        In the semiconductor industry, <strong>there is no one-size-fits-all material</strong>. Each semiconductor—Silicon, Germanium, and Gallium Arsenide—has unique electrical, thermal, and optical properties that make it ideal for certain applications but unsuitable for others.
+                    </p>
+
+                    <div class="challenge-box">
+                        <h4><i class="fas fa-lightbulb"></i> The Research Question</h4>
+                        <p>
+                            <strong>How do the fundamental physical and electrical properties of Silicon, Germanium, and Gallium Arsenide determine their suitability for different semiconductor applications?</strong>
+                        </p>
+                    </div>
+
+                    <p class="body-text">
+                        Engineers must understand these trade-offs to:
+                    </p>
+
+                    <div class="objectives-grid">
+                        <div class="objective-item">
+                            <i class="fas fa-check-circle"></i> Select the right material for each application
+                        </div>
+                        <div class="objective-item">
+                            <i class="fas fa-check-circle"></i> Optimize device performance and efficiency
+                        </div>
+                        <div class="objective-item">
+                            <i class="fas fa-check-circle"></i> Manage manufacturing costs and complexity
+                        </div>
+                        <div class="objective-item">
+                            <i class="fas fa-check-circle"></i> Balance speed, power, and reliability
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Silicon Section -->
+        <section class="material-section silicon-section">
+            <div class="container">
+                <div class="material-content">
+                    <div class="material-info">
+                        <div class="material-header">
+                            <h2><i class="fas fa-gem"></i> Silicon (Si)</h2>
+                            <span class="material-label">The Industry Workhorse</span>
+                        </div>
+
+                        <p class="material-intro">
+                            Silicon remains the king of the industry, not because it's the "fastest," but because it is the most reliable and easiest to manufacture.
+                        </p>
+
+                        <div class="properties-list">
+                            <div class="property-item">
+                                <h4><i class="fas fa-bolt"></i> Moderate Band Gap (1.12 eV)</h4>
+                                <p>
+                                    This "Goldilocks" energy gap allows it to operate reliably at room temperature without excessive electron leakage.
+                                </p>
+                            </div>
+
+                            <div class="property-item">
+                                <h4><i class="fas fa-thermometer-half"></i> Thermal Stability</h4>
+                                <p>
+                                    It can handle the heat generated by dense chips (like the CPU in your laptop) up to roughly 150°C.
+                                </p>
+                            </div>
+
+                            <div class="property-item">
+                                <h4><i class="fas fa-industry"></i> Mature Ecosystem</h4>
+                                <p>
+                                    Decades of CMOS fabrication refinement make it incredibly cost-effective for mass-producing large-scale integrated circuits.
+                                </p>
+                            </div>
+
+                            <div class="property-item limitation">
+                                <h4><i class="fas fa-exclamation-triangle"></i> The Limitation</h4>
+                                <p>
+                                    It has lower carrier mobility than the others, meaning it struggles when forced into ultra-high-frequency (microwave) ranges.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="material-stats">
+                        <div class="stat-card">
+                            <div class="stat-label">Band Gap</div>
+                            <div class="stat-value">1.12 eV</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Max Temp</div>
+                            <div class="stat-value">150°C</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Market Share</div>
+                            <div class="stat-value">95%+</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Use Case</div>
+                            <div class="stat-value">Logic ICs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Germanium Section -->
+        <section class="material-section germanium-section">
+            <div class="container">
+                <div class="material-content">
+                    <div class="material-info">
+                        <div class="material-header">
+                            <h2><i class="fas fa-crown"></i> Germanium (Ge)</h2>
+                            <span class="material-label">The Speed Specialist</span>
+                        </div>
+
+                        <p class="material-intro">
+                            Germanium was the material used in the very first transistors, and it's seeing a resurgence in specialized tech due to its raw conductivity.
+                        </p>
+
+                        <div class="properties-list">
+                            <div class="property-item">
+                                <h4><i class="fas fa-tachometer-alt"></i> High Carrier Mobility</h4>
+                                <p>
+                                    Charge moves through Germanium much faster than Silicon, leading to superior electrical conductivity and faster switching.
+                                </p>
+                            </div>
+
+                            <div class="property-item">
+                                <h4><i class="fas fa-bolt"></i> Small Band Gap (0.66 eV)</h4>
+                                <p>
+                                    Because the gap is so small, it takes very little energy to move electrons, enabling rapid transitions.
+                                </p>
+                            </div>
+
+                            <div class="property-item infrared">
+                                <h4><i class="fas fa-eye"></i> Infrared Transparency</h4>
+                                <p>
+                                    Transparent to infrared wavelengths, making it ideal for thermal imaging and sensor applications.
+                                </p>
+                            </div>
+
+                            <div class="property-item limitation">
+                                <h4><i class="fas fa-exclamation-triangle"></i> The Thermal Trade-off</h4>
+                                <p>
+                                    That same small band gap is its downfall; even at moderate temperatures, "intrinsic carriers" (unwanted electrons) jump the gap, causing massive leakage current and instability.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="material-stats">
+                        <div class="stat-card">
+                            <div class="stat-label">Band Gap</div>
+                            <div class="stat-value">0.66 eV</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Carrier Mobility</div>
+                            <div class="stat-value">Higher</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Max Temp</div>
+                            <div class="stat-value">~100°C</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Use Case</div>
+                            <div class="stat-value">Sensors, IR</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallium Arsenide Section -->
+        <section class="material-section gaas-section">
+            <div class="container">
+                <div class="material-content">
+                    <div class="material-info">
+                        <div class="material-header">
+                            <h2><i class="fas fa-rocket"></i> Gallium Arsenide (GaAs)</h2>
+                            <span class="material-label">The Optoelectronic Elite</span>
+                        </div>
+
+                        <p class="material-intro">
+                            GaAs is a III-V compound semiconductor (combining elements from groups III and V of the periodic table), giving it properties simple elements can't match.
+                        </p>
+
+                        <div class="properties-list">
+                            <div class="property-item">
+                                <h4><i class="fas fa-lightbulb"></i> Direct Band Gap (1.42 eV)</h4>
+                                <p>
+                                    This is the "magic" property. Electrons can emit a photon (light) directly when they drop energy levels. Essential for LEDs and Lasers.
+                                </p>
+                            </div>
+
+                            <div class="property-item">
+                                <h4><i class="fas fa-zap"></i> High Electron Mobility</h4>
+                                <p>
+                                    It operates at speeds far beyond Silicon, making it the standard for 5G, satellite communications, and microwave applications.
+                                </p>
+                            </div>
+
+                            <div class="property-item optoelectronic">
+                                <h4><i class="fas fa-microchip"></i> Optoelectronic Integration</h4>
+                                <p>
+                                    Unique ability to generate and detect light, enabling integrated photonic devices and fiber-optic communications.
+                                </p>
+                            </div>
+
+                            <div class="property-item limitation">
+                                <h4><i class="fas fa-exclamation-triangle"></i> The Barrier</h4>
+                                <p>
+                                    Significantly more expensive to manufacture and lacks a stable natural oxide like Silicon, making it harder to build complex logic gates.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="material-stats">
+                        <div class="stat-card">
+                            <div class="stat-label">Band Gap</div>
+                            <div class="stat-value">1.42 eV</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Type</div>
+                            <div class="stat-value">Direct Gap</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Mobility</div>
+                            <div class="stat-value">Very High</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Use Case</div>
+                            <div class="stat-value">5G, LEDs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section class="comparison-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-chart-bar"></i> Quick Comparison</h2>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Silicon (Si)</th>
+                                <th>Germanium (Ge)</th>
+                                <th>Gallium Arsenide (GaAs)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Band Gap</strong></td>
+                                <td>1.12 eV</td>
+                                <td>0.66 eV</td>
+                                <td>1.42 eV</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Carrier Mobility</strong></td>
+                                <td>Moderate</td>
+                                <td>High</td>
+                                <td>Very High</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Temperature Range</strong></td>
+                                <td>Up to 150°C</td>
+                                <td>Up to ~100°C</td>
+                                <td>Excellent Stability</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Optical Properties</strong></td>
+                                <td>Indirect Gap</td>
+                                <td>IR Transparent</td>
+                                <td>Direct Gap (Light Emission)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Manufacturing Cost</strong></td>
+                                <td>Very Low</td>
+                                <td>Moderate</td>
+                                <td>Very High</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Primary Application</strong></td>
+                                <td>Logic ICs, CPUs</td>
+                                <td>Sensors, IR Detectors</td>
+                                <td>5G, LEDs, Lasers, Fiber Optics</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Problem Points -->
+        <section class="problem-points-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-list-check"></i> Key Problem Points</h2>
+                </div>
+
+                <div class="points-grid">
+                    <div class="point-card">
+                        <div class="point-number">1</div>
+                        <h4>Material Trade-offs</h4>
+                        <p>No single material excels in all properties—speed, temperature stability, and cost are inherently linked.</p>
+                    </div>
+
+                    <div class="point-card">
+                        <div class="point-number">2</div>
+                        <h4>Application Demands</h4>
+                        <p>Different applications prioritize different properties: CPUs need stability, sensors need sensitivity, communications need speed.</p>
+                    </div>
+
+                    <div class="point-card">
+                        <div class="point-number">3</div>
+                        <h4>Engineering Decisions</h4>
+                        <p>Engineers must make informed choices based on understanding fundamental semiconductor physics.</p>
+                    </div>
+
+                    <div class="point-card">
+                        <div class="point-number">4</div>
+                        <h4>Future Innovation</h4>
+                        <p>As demands evolve, understanding material properties enables development of next-generation semiconductors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation to Next Section -->
+        <section class="navigation-section">
+            <div class="container">
+                <div class="nav-buttons">
+                    <a href="Introduction.html" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-arrow-left"></i> Introduction
+                    </a>
+                    <a href="Objectives.html" class="btn btn-primary btn-lg">
+                        Objectives <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Problem Statement</h5>
+                    <p>Understanding material trade-offs in semiconductor technology.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="Introduction.html">Introduction</a></li>
+                        <li><a href="Primary page.html">Back to Report</a></li>
+                        <li><a href="Objectives.html">Next Section</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Report Sections</h5>
+                    <ul class="list-unstyled">
+                        <li>1. Introduction</li>
+                        <li>2. Problem Statement (Current)</li>
+                        <li>3. Objectives</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-white my-4">
+            <div class="text-center">
+                <p>&copy; 2026 Chip Chronicles - Group 10</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Problem statement.js"></script>
+</body>
+</html>
