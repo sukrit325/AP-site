@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+        <title>Primary page</title>    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <input type="text" placeholder="Enter segment name: ">
+        <label class="switch">
+        <input type="checkbox" id="uiToggle">
+        <span class="slider"></span>
+        </label>
+        <script>
+const toggle = document.getElementById("uiToggle");
+
+// Get current page name (e.g., index.html, Introduction.html)
+const currentPage = window.location.pathname.split("/").pop();
+
+// Detect current folder
+const isOld = window.location.pathname.includes("/Old/");
+const isNew = window.location.pathname.includes("/New/");
+
+// Set toggle state on load
+if (isNew) {
+    toggle.checked = true; // switch ON for New UI
+}
+
+// Toggle action
+toggle.addEventListener("change", () => {
+    if (toggle.checked) {
+        localStorage.setItem("uiVersion", "New");
+        window.location.href = "../New/" + currentPage;
+    } else {
+        localStorage.setItem("uiVersion", "Old");
+        window.location.href = "../Old/" + currentPage;
+    }
+});
+
+// Auto-redirect based on saved preference
+const saved = localStorage.getItem("uiVersion");
+
+if (saved === "New" && isOld) {
+    window.location.href = "../New/" + currentPage;
+}
+
+if (saved === "Old" && isNew) {
+    window.location.href = "../Old/" + currentPage;
+}
+</script>
+    </head>
+    <body>
+        <div><h1>Group 10</h1></div>
+        <div class="Chronicles"><h2>Chip Chronicles</h2></div>
+        <div class="content-container">
+            <div class="card">
+                <p>Now we are gonna delve into the world of semiconductors and look
+                into the method of manufacturing of semiconductors 
+                and look into a case study related to this topic as well as
+                future prospects of semiconductors... </p>
+            </div>
+            <img src="Semiconductors (primary).jpg">
+        </div>
+        <div class="button-container">
+            <a href="Main page.html"> <button> Let's go!!</button></a>
+        </div>
+    </body>
+</html>
